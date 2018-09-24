@@ -1,1 +1,30 @@
+Problem Statements
 
+1.	Say True or False for the below statements:
+1.1	Prescriptive Analytics used to predict the future outcomes?
+1.2	Base R packages installed automatically?
+
+2.	What is Recycling of elements in a vector?
+3.	Give an example of recycling of elements.
+
+
+Solutions for the above Problem Statements
+
+1.1 False
+Reason:- Predective Analysis is used to predict the future outcomes.
+
+1.2 True
+Reason :- Base R packages installed automatically beause ther are builtin functions/packages that comes preinstalled in RStudio.
+
+2.Recycling of elements in a vector occurs when vector arithmetic is performed on multiple vectors of different sizes 
+i.e If two vectors are of unequal length, the shorter one will be recycled in order to match the longer vector.
+
+3.For example, the following vectors x and y have unequal lengths, and their sum is computed by recycling values of the shorter vector u.
+ x <- c(5,10,15)
+ y <- c(1,2,3,4,5,6,7,8,9)
+After Running in Rstudio Console
+> x <- c(5,10,15)
+> y <- c(1,2,3,4,5,6,7,8,9)
+> z <- x+y
+> z
+[1]  6 12 18  9 15 21 12 18 24
