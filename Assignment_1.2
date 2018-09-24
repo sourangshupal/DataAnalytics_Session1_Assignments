@@ -1,1 +1,22 @@
+Problem Statement
 
+1.	What should be the output of the following Script? 
+v <- c( 2,5.5,6)
+t <- c(8, 3, 4)
+print(v%/%t)
+
+2.	You have 25 excel files with names as xx_1.xlsx, xx_2.xlsx,…	xx_25.xlsx in a dir.
+Write a program to extract the contents of each excel sheet and make it one df.
+
+3.	If the above 25 files were csv files, what would be your script to read?
+
+Solutions
+
+1.The Output will be :-
+> v <- c( 2,5.5,6)
+> t <- c(8, 3, 4)
+> print(v%/%t)
+[1] 0 1 1
+
+In this script vector v is divided by t, the corresponding elements of the vectors will be divided and only the quotient will be shown
+in the output i.e when we do 2/8=0.something or 5.5/3=1.something, thenit will show only the quotient part which is before the decimal part.
